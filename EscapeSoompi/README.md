@@ -66,9 +66,34 @@
 - 将该脚本挂载在主摄像机下
 - **将`Main Camera`拖动赋值给`Controller`的`main_camera`属性**
 ### 玩家移动JoyStick
-与之前HitUFO中的`JoyStick`实现方式不同，这里`w`和`s`键控制的移动改为`Z轴`上的移动，`a`和`d`键控制的移动改为游戏对象的旋转
+与之前HitUFO中的`JoyStick`实现方式不同，这里`w`和`s`键控制的移动改为`Z轴`上的移动，`a`和`d`键控制的移动则仍为`X轴`上的移动，另外为了更好的用户游戏体验，还加入了游戏对象旋转的功能——往哪个方向移动则游戏对象正面朝向该方向。
 
 ```csharp
+//获取方向键的偏移量
+float translationX = Input.GetAxis("Horizontal");
+float translationZ = Input.GetAxis("Vertical");
+if (!game_over)
+{
+    
+    //移动和旋转
+    wyb.transform.Translate(translationX * wyb_speed * Time.deltaTime, 0, translationZ * wyb_speed * Time.deltaTime, Space.World);
+    if (translationX < 0)
+    {
+        wyb.transform.eulerAngles = new Vector3(0, -90, 0);
+    }
+    else if (translationX > 0)
+    {
+        wyb.transform.eulerAngles = new Vector3(0, 90, 0);
+    }
+    if (translationZ < 0)
+    {
+        wyb.transform.eulerAngles = new Vector3(0, 180, 0);
+    }
+    else if (translationZ > 0)
+    {
+        wyb.transform.eulerAngles = new Vector3(0, 0, 0);
+    }
+}
 
 ```
 # 游戏演示视频
