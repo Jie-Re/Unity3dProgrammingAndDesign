@@ -77,7 +77,7 @@
 
 [博客传送门](https://blog.csdn.net/xxiangyusb/article/details/102892598)
 # 演示视频
-[前往b站观看效果演示视频]()
+[前往b站观看效果演示视频](https://www.bilibili.com/video/av74586751/)
 # 参考资料
 [潘老师的课程网站](https://pmlpml.github.io/unity3d-learning/08-particle-system)  
 [Unity官方汽车模拟教程](https://docs.unity3d.com/Manual/PartSysExhaust.html)
