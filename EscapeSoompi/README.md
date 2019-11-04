@@ -12,7 +12,7 @@
 - 使用订阅与发布模式传消息：`CoinCollide`和`SoompiCollide`将“碰撞”消息传递给`GameEventManager`和`Controller`，由`GameEventManager`和`Controller`通知其他模型
 - 工厂模式产生巡逻兵和物品
 
-[代码传送门](https://github.com/Jie-Re/Unity3dProgrammingAndDesign/tree/master/EscapeSoompi)
+[博客传送门](https://blog.csdn.net/xxiangyusb/article/details/102696208)
 ## 场景制作
 ### 地图绘制
 - 下载并导入资源`Wispy Sky`和`Winter Zone Mini`
@@ -99,5 +99,5 @@ if (!game_over)
 # 游戏演示视频
 [前往b站观看游戏演示视频](https://www.bilibili.com/video/av74460388/)
 # 参考资料
-[发布订阅模式与观察者模式](https://segmentfault.com/a/1190000018706349)
+[发布订阅模式与观察者模式](https://segmentfault.com/a/1190000018706349)  
 [Unity动画机制 Animator与Animator Controller教程](https://blog.csdn.net/ChinarCSDN/article/details/81437311)
