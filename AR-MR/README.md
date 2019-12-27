@@ -81,7 +81,7 @@ public class VBEventHandler : MonoBehaviour, IVirtualButtonEventHandler
 
 }
 ```
-[完整项目传送门]()
-详细演示视频可[前往B站查看]()
+[博客传送门](https://blog.csdn.net/xxiangyusb/article/details/103633515)  
+详细演示视频可[前往B站查看](https://www.bilibili.com/video/av80804997/)
 # 参考资料
 [3D Game Programming & Design AR/MR 技术](https://pmlpml.github.io/unity3d-learning/12-AR-and-MR#2ar-sdk-%E4%B8%8E%E5%BA%94%E7%94%A8)
